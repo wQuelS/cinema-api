@@ -3,21 +3,22 @@ API service for a cinema. Written in Python using Django REST Framework.
 ### Installation
 Install PostgresSQL and create db
 
+Clone repository `git clone https://github.com/wQuelS/cinema-api.git`  
+Change directory `cd cinema-api`  
+Set environment `python -m venv venv` and activate it `source venv/bin/activate`  
+Install all requirements via `pip install -r requirements.txt`  
+ Now you can set variables for DB and migrate:  
 ```
-git clone 
-git clone https://github.com/IvanStored/cinema-api-docker.git
-cd cinema-api-docker
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-set DB_HOST=<your db hostname>
-set DB_NAME=<your db name>
-set DB_USER=<your db username>
-set DB_PASSWORD=<your db user password>
-set SECRET_KEY=<your secret key>
+DB_HOST=<your db hostname>
+DB_NAME=<your db name>
+DB_USER=<your db username>
+DB_PASSWORD=<your db user password>
+SECRET_KEY=<your secret key>
 python manage.py migrate
 python manage.py runserver
 ```
+
+
 ### Run Docker containers
 Docker should be installed
 ```
